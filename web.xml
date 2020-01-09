@@ -1,0 +1,30 @@
+<!--this xml file manages the connection between URL and servlets-->
+<?xml version="1.0"?>
+  <!-- beginning of servlet declaration-->
+  <web-app>
+
+    <!-- declaring DemoServlet class -->
+    <servlet>
+      <servlet-name>demoservlet</servlet-name>
+      <servlet-class>DemoServlet</servlet-class>
+    </servlet>
+
+    <!-- declaring DemoServlet URL-->
+    <servlet-mapping>
+      <servlet-name>demoservlet</servlet-name>
+      <url-pattern>/dservlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- declaring NewDemoServlet class -->
+    <servlet>
+      <servlet-name>newdemoservlet</servlet-name>
+      <servlet-class>NewDemoServlet</servlet-class>
+    </servlet>
+
+    <!-- declaring NewDemoServlet URL-->
+    <servlet-mapping>
+      <servlet-name>newdemoservlet</servlet-name>
+      <url-pattern>/ndservlet</url-pattern>
+    </servlet-mapping>
+
+  </web-app>

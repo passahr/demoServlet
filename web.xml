@@ -2,6 +2,13 @@
 <?xml version="1.0"?>
   <!-- beginning of servlet declaration-->
   <web-app>
+    <display-name>
+      Demonstration Servlets
+    </display-name>
+
+    <descriptor>
+      Bunch of servlets used for experimenting
+    </descriptor>
 
     <!-- declaring DemoServlet class -->
     <servlet>

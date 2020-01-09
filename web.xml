@@ -1,7 +1,8 @@
 <!--this xml file manages the connection between URL and servlets-->
-<?xml version="1.0"?>
+
   <!-- beginning of servlet declaration-->
   <web-app>
+
     <display-name>
       Demonstration Servlets
     </display-name>
@@ -10,16 +11,17 @@
       Bunch of servlets used for experimenting
     </descriptor>
 
+
     <!-- declaring DemoServlet class -->
     <servlet>
-      <servlet-name>demoservlet</servlet-name>
+      <servlet-name>first</servlet-name>
       <servlet-class>DemoServlet</servlet-class>
     </servlet>
 
     <!-- declaring DemoServlet URL-->
     <servlet-mapping>
-      <servlet-name>demoservlet</servlet-name>
-      <url-pattern>/dservlet</url-pattern>
+      <servlet-name>first</servlet-name>
+      <url-pattern>/ds</url-pattern>
     </servlet-mapping>
 
     <!-- declaring NewDemoServlet class -->
@@ -28,10 +30,35 @@
       <servlet-class>NewDemoServlet</servlet-class>
     </servlet>
 
-    <!-- declaring NewDemoServlet URL-->
+    <!-- declaring NewDemoServlet URL -->
     <servlet-mapping>
       <servlet-name>newdemoservlet</servlet-name>
-      <url-pattern>/ndservlet</url-pattern>
+      <url-pattern>/nds</url-pattern>
     </servlet-mapping>
+
+    <!-- declaring InsertName class -->
+    <servlet>
+      <servlet-name>inname</servlet-name>
+      <servlet-class>InsertName</servlet-class>
+    </servlet>
+
+    <!-- declaring InsertName URL-->
+    <servlet-mapping>
+      <servlet-name>inname</servlet-name>
+      <url-pattern>/insertName</url-pattern>
+    </servlet-mapping>
+
+    <!-- declaring WelcomeServlet class-->
+    <servlet>
+      <servlet-name>welc</servlet-name>
+      <servlet-class>WelcomeServlet</servlet-class>
+    </servlet>
+
+    <!-- declaring WelcomeServlet URL-->
+    <servlet-mapping>
+      <servlet-name>welc</servlet-name>
+      <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+
 
   </web-app>

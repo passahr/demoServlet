@@ -60,5 +60,17 @@
       <url-pattern>/welcome</url-pattern>
     </servlet-mapping>
 
+    <!-- declaring CookieServlet class-->
+    <servlet>
+      <servlet-name>nowwithcookies</servlet-name>
+      <servlet-class>CookieServlet</servlet-class>
+    </servlet>
+
+    <!-- declaring CookieServlet URL-->
+    <servlet-mapping>
+      <servlet-name>nowwithcookies</servlet-name>
+      <url-pattern>/connessi</url-pattern>
+    </servlet-mapping>
+
 
   </web-app>

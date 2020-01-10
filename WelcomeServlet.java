@@ -25,17 +25,10 @@ public class WelcomeServlet extends HttpServlet
 
     out.println("<body>");
 
-    out.println("<p> Benvenuto " + nome + "</p>" );
-    if(cookies != null && cookies.length != 0)
-    {
-      out.println("<p>");
-      for (int i= 0; i<cookies.length; i++)
-      {
-        out.println(nome+" "+cognome +" ha visitato questa pagina");
-      }
-      out.println("</p>");
-    }
-    out.println("<p> Benvenuto " + nome + "</p>" );
+
+
+    out.println("<p> Benvenuto " + nome +" "+cognome+ "</p>" + "<br/>" );
+    out.println("<a href='/demo/connessi'> clicca qui per vedere tutti gli utenti che si sono connessi </a>");
 
 
 

@@ -4,7 +4,7 @@ import javax.servlet.*;
 import java.io.*;
 public class DemoServlet extends HttpServlet
 {
-  public void doGet(HttpServletRequest reqest, HttpServletResponse response) throws ServletException, IOException
+  public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
   {
     response.setContentType("text/html");
     PrintWriter pw = response.getWriter();
